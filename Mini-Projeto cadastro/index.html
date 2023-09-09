@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>Cadastrar Produtos</title>
+</head>
+
+<body>
+    <header>
+        <h5 class="header-title">Cadastro de Produtos</h5>
+    </header>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Cadastrar Produto</h2>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" class="modal-field" placeholder="Nome do Produto">
+                    <input type="text" id="valor" class="modal-field" placeholder="Valor do Produto">
+                    <input type="text" id="quantidade" class="modal-field" placeholder="Quantidade de Produtos">
+                    <input type="text" id="local" class="modal-field" placeholder="Onde Comprou o Produto">
+                </form>
+                <footer class="modal-footer">
+                    <button type="button" class="button green" id="salvar">Salvar</button>
+                    <button type="button" class="button red" id="cancelar">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+    <main>
+        <h1>Feira do Mês</h1>
+        <button class="button brown mobile" id="addProduto">Adicionar Produto</button>
+        <table class="records" id="tableClient">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Quantidade</th>
+                    <th>Local</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            </table>
+    </main>
+
+
+
+    <footer>
+        Copyright Wagner Gomes.
+    </footer>
+<script src="main.js" defer></script>
+</body>
+
+</html>
